@@ -13,18 +13,10 @@ import com.cardio_generator.outputs.OutputStrategy;
  */
 public class AlertGenerator implements PatientDataGenerator {
 
-    /**
-     * A constant random number generator used for probabilistic alert generation.
-     * <p>
-     * This field follows the UPPER_SNAKE_CASE convention as it is a static final variable.
-     */
+
     public static final Random RANDOM_GENERATOR = new Random();//renamed to follow UPPER_SNAKE_CASE cause its a final variable
 
-    /**
-     * An array that holds the state of the alert for each patient.
-     * <p>
-     * A value of {@code true} means the alert is active (pressed), and {@code false} means the alert has been resolved.
-     */
+
     private boolean[] alertStates; // false = resolved, true = pressed
 
      /**
